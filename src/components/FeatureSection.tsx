@@ -1,0 +1,39 @@
+import { Circle } from "lucide-react";
+import React from "react";
+
+type Props = {};
+
+function FeatureSection({}: Props) {
+  return (
+    <div className="w-full backdrop-blur-2xl min-h-[300px] h-[600px]  border-b flex items-center">
+      <div className="w-1/2 flex justify-center">
+        <img
+          src="/feature.png"
+          alt="Hero Image"
+          className="rounded-lg brightness-80 hover:scale-105 duration-200 hover:animate-pulse"
+        />
+      </div>{" "}
+      <div className="w-1/2 border-l pl-16 px-8  flex flex-col justify-center h-full">
+        <div className="flex mb-8 items-center gap-2">
+          <h3 className="font-sans text-base capitalize">
+            BUILDING GATEWAYS THAT ARE
+          </h3>
+          <Circle
+            size={16}
+            strokeWidth={4}
+            className="stroke-[#d0f6ae] font-extrabold"
+          />
+        </div>
+        <h1 className="">
+          Designed for the <br /> future
+        </h1>
+        <p className="mt-8 max-w-lg ">
+          Volume manufacturing with iterative development enabling proactive
+          deployments
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default FeatureSection;
