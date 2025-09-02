@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 const CtaSection = () => {
   return (
     <section className=" backdrop-blur-3xl border-b py-32">
-      <div className="container">
+      <div className=" w-full max-sm:px-12">
         <div className="flex flex-col items-start md:items-center">
           {/* Badge */}
           <Badge className="rounded-none bg-transparent text-white/80 border outline">

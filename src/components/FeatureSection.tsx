@@ -5,15 +5,15 @@ type Props = {};
 
 function FeatureSection({}: Props) {
   return (
-    <div className="w-full backdrop-blur-2xl min-h-[300px] h-[600px]  border-b flex items-center">
-      <div className="w-1/2 flex justify-center">
+    <div className="w-full backdrop-blur-2xl min-h-[300px] max-sm:py-16 lg:h-[600px]  border-b flex flex-col-reverse lg:flex-row items-center">
+      <div className="lg:w-1/2 flex   lg:justify-center">
         <img
           src="/feature.png"
           alt="Hero Image"
           className="rounded-lg brightness-80 hover:scale-105 duration-200 hover:animate-pulse"
         />
       </div>{" "}
-      <div className="w-1/2 border-l pl-16 px-8  flex flex-col justify-center h-full">
+      <div className="lg:w-1/2 lg:border-l lg:pl-16 px-8  flex flex-col justify-center h-full">
         <div className="flex mb-8 items-center gap-2">
           <h3 className="font-sans text-base capitalize">
             BUILDING GATEWAYS THAT ARE

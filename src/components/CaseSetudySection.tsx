@@ -54,29 +54,29 @@ const CaseStudySection = ({
 }: Casestudies3Props) => {
   return (
     <section className="">
-      <div className="container">
+      <div className="w-full">
         <div className="border-border border border-r-0 border-l-0">
           <a
             href={featuredCasestudy.link || "#"}
             className=" group grid gap-4 overflow-hidden px-6 transition-colors duration-500 ease-out lg:grid-cols-2 xl:px-28"
           >
             <div className="flex flex-col justify-between gap-4 pt-8 md:pt-16 lg:pb-16">
-              <div className="flex items-center gap-2 text-2xl font-medium">
-                <Framer className="text-white/80" />
+              <div className="flex items-center text-white/80 group-hover:text-white gap-2 text-2xl font-medium">
+                <Framer className="text-white/80 hover:text-white" />
                 {featuredCasestudy.company}
               </div>
               <div>
                 <span className="text-muted-foreground text-xs sm:text-sm">
                   {featuredCasestudy.tags}
                 </span>
-                <h2 className="mb-5 mt-4 text-balance text-2xl font-semibold sm:text-3xl sm:leading-10">
+                <h2 className="mb-5 mt-4 text-balance text-white/80 group-hover:text-white text-2xl font-semibold sm:text-3xl sm:leading-10">
                   {featuredCasestudy.title}
                   <span className="text-primary/50 font-medium transition-colors duration-500 ease-out">
                     {" "}
                     {featuredCasestudy.subtitle}
                   </span>
                 </h2>
-                <div className="flex items-center gap-2 font-medium">
+                <div className="flex items-center text-white/60 group-hover:text-white gap-2 font-medium">
                   Read case study
                   <MoveRight className="h-4 w-4 transition-transform duration-500 ease-out group-hover:translate-x-1" />
                 </div>
@@ -101,7 +101,7 @@ const CaseStudySection = ({
                 <a
                   key={item.company}
                   href={item.link || "#"}
-                  className={`border-border backdrop-blur-3xl group flex flex-col justify-between gap-12 px-6 py-8 transition-colors duration-500 ease-out md:py-16 lg:pb-16 xl:gap-16 ${
+                  className={`border-border text-white/80 group-hover:text-white backdrop-blur-3xl group flex flex-col justify-between gap-12 px-6 py-8 transition-colors duration-500 ease-out md:py-16 lg:pb-16 xl:gap-16 ${
                     idx === 0
                       ? "xl:border-l xl:pl-8"
                       : "border-t lg:border-l lg:border-t-0 xl:border-r xl:pl-8"

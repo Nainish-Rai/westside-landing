@@ -5,8 +5,8 @@ type Props = {};
 
 function FeatureSectionTwo({}: Props) {
   return (
-    <div className="w-full backdrop-blur-2xl min-h-[300px] h-[600px]  border-b flex items-center">
-      <div className="w-1/2 border-r ml-[2px] pl-16 px-8  flex flex-col justify-center h-full">
+    <div className="w-full backdrop-blur-2xl min-h-[300px]  lg:h-[600px]  border-b flex  max-sm:py-16 flex-col lg:flex-row items-center">
+      <div className="lg:w-1/2 lg:border-r ml-[2px] lg:pl-16 px-8  flex flex-col justify-center h-full">
         <div className="flex mb-8 items-center gap-2">
           <h3 className="font-sans text-base capitalize">
             BUILDING GATEWAYS THAT ARE
@@ -24,7 +24,7 @@ function FeatureSectionTwo({}: Props) {
           Scalable and modular architecture with a focus on future-proofing
         </p>
       </div>{" "}
-      <div className="w-1/2 flex justify-center">
+      <div className="lg:w-1/2 flex justify-center">
         <img
           src="/feature.png"
           alt="Hero Image"

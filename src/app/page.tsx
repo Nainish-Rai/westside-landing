@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     //bg-[#14281D]
-    <main className="min-h-screen flex flex-col   text-white">
+    <main className="min-h-screen w-full flex flex-col   text-white">
       <HeroSection />
       <FeatureSection />
       <FeatureSectionTwo />

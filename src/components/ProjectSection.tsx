@@ -43,8 +43,8 @@ const projects = [
 
 const ProjectSection = () => {
   return (
-    <section className="py-32  backdrop-blur-3xl">
-      <div className="container">
+    <section className="py-16 lg:py-32 max-sm:px-6 w-full  backdrop-blur-3xl">
+      <div className="w-full">
         <div className="w-full lg:px-16 mx-auto">
           <p className="text-muted-foreground mb-1 uppercase md:text-lg">
             Powering the Future of Space Infrastructure
@@ -67,7 +67,7 @@ const ProjectSection = () => {
             <a
               key={idx}
               href={project.url}
-              className="group relative isolate min-h-72 bg-cover bg-center px-5 py-14 lg:px-12 border border-x-0 lg:py-24"
+              className="group relative isolate min-h-96 lg:min-h-72 bg-cover bg-center px-5 py-14 lg:px-12 border border-x-0 max-sm:pb-32 lg:py-24"
               style={{
                 backgroundImage: `url(${project.image})`,
               }}

@@ -82,9 +82,9 @@ const Footer = ({
   legalLinks = defaultLegalLinks,
 }: Footer7Props) => {
   return (
-    <section className="py-32 ">
-      <div className="container ">
-        <div className="flex px-16 w-full flex-col justify-between gap-10 lg:flex-row lg:items-start lg:text-left">
+    <section className="py-16 lg:py-32 ">
+      <div className="w-full ">
+        <div className="flex px-6 lg:px-16  mx-auto w-full flex-col justify-between gap-10 lg:flex-row lg:items-start lg:text-left">
           <div className="flex w-full flex-col justify-between gap-6 lg:items-start">
             {/* Logo */}
             <div className="flex items-center gap-2 lg:justify-start">
@@ -124,7 +124,7 @@ const Footer = ({
             ))}
           </div>
         </div>
-        <div className="text-muted-foreground px-16 mt-8 flex flex-col justify-between gap-4 border-t py-8 text-xs font-medium md:flex-row md:items-center md:text-left">
+        <div className="text-muted-foreground px-6 lg:px-16 mt-8 flex flex-col justify-between gap-4 border-t py-8 text-xs font-medium md:flex-row md:items-center md:text-left">
           <p className="text-base">{copyright}</p>
           <ul className="order-1 flex flex-col gap-2 md:order-2 md:flex-row">
             {legalLinks.map((link, idx) => (

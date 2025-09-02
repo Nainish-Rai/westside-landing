@@ -3,8 +3,8 @@ import { FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const SocialSection = () => {
   return (
-    <section className="py-32 border border-t-0 border-x-0">
-      <div className="container px-16">
+    <section className="py-16 lg:py-32 border border-t-0 border-x-0">
+      <div className="w-full px-8 xl:px-28">
         <h2 className="mb-5 text-white/80 text-2xl font-semibold md:text-3xl">
           Join our community
         </h2>
@@ -13,7 +13,7 @@ const SocialSection = () => {
         </p>
         <div className="mt-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4">
           <a
-            className="group rounded-none backdrop-blur-3xl border border-border border-r-0 p-6"
+            className="group rounded-none backdrop-blur-3xl border border-border border-r lg:border-r-0 p-6"
             href="#"
           >
             <div className="flex items-center justify-between gap-4">
@@ -28,7 +28,7 @@ const SocialSection = () => {
             </div>
           </a>
           <a
-            className="group rounded-none backdrop-blur-3xl border border-border border-r-0  p-6"
+            className="group rounded-none backdrop-blur-3xl border border-border lg:border-r-0  p-6"
             href="#"
           >
             <div className="flex items-center justify-between gap-4">
@@ -43,7 +43,7 @@ const SocialSection = () => {
             </div>
           </a>
           <a
-            className="group rounded-none backdrop-blur-3xl border border-border border-r-0  p-6"
+            className="group rounded-none backdrop-blur-3xl border border-border lg:border-r-0  p-6"
             href="#"
           >
             <div className="flex items-center justify-between gap-4">
